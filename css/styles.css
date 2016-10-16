@@ -1,12 +1,16 @@
 
 body{
 	background-color: #a4d3ee;
-	margin: 0px;
+	/*margin: 0px;*/
+	overflow-x: hidden;
+    height: 4000px;
 }
 
 #content {
-
 	width:100%;
+	height: 4000px;
+    overflow: hidden;
+    position: absolute;
 }
 
 /* Styles für die Textelemente */
@@ -35,26 +39,25 @@ body{
 	
 }
 
-.svgbox svg { 
+.svgbox-ocean svg { 
 	width: 100%;
-	height:100%;
-
-	
+	height:100%;	
 }
+
 
 /* Animation für die "meer" Elemente */
 
-@keyframes h-waves {
-
-	0% { left: 0px;}
-	50% {left: 50px;}
-	100% {left: 0px;}
-}
-
-@keyframes v-waves {
+@keyframes down-waves {
 
 	0% { top: 0px;}
-	50% {top: 10px;}
+	50% {top: 15px;}
+	100% {top: 0px;}
+}
+
+@keyframes up-waves {
+
+	0% { top: 0px;}
+	50% {top: -10px;}
 	100% {top: 0px;}
 }
 
@@ -63,10 +66,12 @@ body{
 #ocean-white{
 	stroke: #f0ffff;
 	fill: #f0ffff;
-	position: absolute;	
-	animation-name: h-waves;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
+	position: absolute;
+	animation-name: up-waves;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;		
+   
+    
 }
 
 #ocean-blue{	
@@ -74,6 +79,10 @@ body{
 	fill: #607b8b;
 	opacity: 0.7;
 	position: absolute;
+	animation-name: up-waves;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;	
+
 		
 }
 
@@ -82,11 +91,98 @@ body{
 	stroke: #8db6cd;
 	fill: #8db6cd;
 	position: absolute;
-	animation-name: v-waves;
+	animation-name: down-waves;
     animation-duration: 4s;
-    animation-iteration-count: infinite;	
+    animation-iteration-count: infinite;
+
+
+}	
+
+
+/* Styles für die "Sonne" Elemente */
+#sun {
+    stroke: #ffc200;
+	fill: #ffc200;
+
+}
+
+.svgbox-sun { 
+	width: 100%; 
+	height: 200px;
+	position: relative;
+	top: 50px;
+
+
+}
+
+.svgbox-sun svg { 
+	width: 100%;
+	height:100%;	
 }
 
 
 
+.boy {
+  display: block;
+  position: absolute;
+}
 
+.joey {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/joey.png);
+  width: 300px;
+  height: 418px;
+}
+
+.donnie {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/donnie.png);
+  width: 250px;
+  height: 303px;
+}
+
+.jordan {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/jordan.png);
+  width: 200px;
+  height: 268px;
+}
+
+.danny {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/danny.png);
+  width: 260px;
+  height: 334px;
+}
+
+.jonathan {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/johnathon.png);
+  width: 200px;
+  height: 353px;
+}
+
+.brian {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/brian.png);
+  width: 260px;
+  height: 352px;
+}
+
+.kevin {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/kevin.png);
+  width: 280px;
+  height: 282px;
+}
+
+.howied {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/howied.png);
+  width: 250px;
+  height: 330px;
+}
+
+.nick {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/nick.png);
+  width: 260px;
+  height: 306px;
+}
+
+.aj {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/aj.png);
+  width: 199px;
+  height: 254px;
+}
