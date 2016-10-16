@@ -9,47 +9,69 @@
    </head>
    <!-- (2) der body funktioniert als Hintergrund/Himmel auf dem sich das Geschehen abspielt -->
    <body>
+    <div id="content">
+
    	<!-- (1) Titel der Seite, das erste Element. Es verschwindet bei Beginn des Scrollens. Position verbleibt am Beginn der Seite -->
    	<h1> Der Wasserkreislauf
    	</h1>
    	<!--(3) Dies ist die erste Textbox mit Erklärung-->
-   	<div>
-   		<h2>Was ist der Wasserkreislauf? /Was muss ich hier tunr?
+   	<div class="explanations">
+   		<h2>Was ist der Wasserkreislauf? /Was muss ich hier tun?
    		</h2>
    			<p>Erläuterung
    			</p>	
-
    	</div>
-
-   	<!--(4) Das Meer. Dies ist ein SVg-->
+      <div class="svgbox-ocean"> <!-- responsiver wrapper-->
+   	<!--(4) Das Meer. Dies ist ein SVG-->
+                    
+         <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+         <svg  id="ocean-blue" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg"  version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 600 900 150"  >  
+           <title>Das Meer</title> <!--meta informationen die nicht angezeigt werden -->      
+           <path d="m0.5 661.86s82.821-31.207 126.07-30.714c39.559 0.4509 75.086 30.076 114.64 30.714 42.922 0.6929 82.482-29.709 125.41-29.294 39.655 0.383 73.028 29.294 115.31 29.294 40.119 0 101.26-33.778 122.38-33.335 53.017 1.1117 77.356 33.427 118.34 33.335 42.784-0.096 80.604-35.647 123.39-35.355 40.845 0.2783 117.33 35.355 117.33 35.355v390h-962.86z" />
+         </svg>       
+         <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+          <svg  id="ocean-white" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg"  version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="-100 550 700 200"  >  
+            <title>Das Meer</title> <!--meta informationen die nicht angezeigt werden -->      
+            <path d="m0.5 661.86s82.821-31.207 126.07-30.714c39.559 0.4509 75.086 30.076 114.64 30.714 42.922 0.6929 82.482-29.709 125.41-29.294 39.655 0.383 73.028 29.294 115.31 29.294 40.119 0 101.26-33.778 122.38-33.335 53.017 1.1117 77.356 33.427 118.34 33.335 42.784-0.096 80.604-35.647 123.39-35.355 40.845 0.2783 117.33 35.355 117.33 35.355v390h-962.86z" />
+          </svg>  
+         <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+         <svg  id="ocean-light" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg"  version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="-50 600 800 100"  >  
+            <title>Das Meer</title> <!--meta informationen die nicht angezeigt werden -->      
+            <path d="m0.5 661.86s82.821-31.207 126.07-30.714c39.559 0.4509 75.086 30.076 114.64 30.714 42.922 0.6929 82.482-29.709 125.41-29.294 39.655 0.383 73.028 29.294 115.31 29.294 40.119 0 101.26-33.778 122.38-33.335 53.017 1.1117 77.356 33.427 118.34 33.335 42.784-0.096 80.604-35.647 123.39-35.355 40.845 0.2783 117.33 35.355 117.33 35.355v390h-962.86z" />
+         </svg>  
+         <svg  id="ocean-light" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg"  version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="200 600 800 100"  >  
+            <title>Das Meer</title> <!--meta informationen die nicht angezeigt werden -->      
+            <path d="m0.5 661.86s82.821-31.207 126.07-30.714c39.559 0.4509 75.086 30.076 114.64 30.714 42.922 0.6929 82.482-29.709 125.41-29.294 39.655 0.383 73.028 29.294 115.31 29.294 40.119 0 101.26-33.778 122.38-33.335 53.017 1.1117 77.356 33.427 118.34 33.335 42.784-0.096 80.604-35.647 123.39-35.355 40.845 0.2783 117.33 35.355 117.33 35.355v390h-962.86z" />
+         </svg> 
+      </div>  <!-- Ende .svgbox-ocean-->
+    <div class="svgbox-sun"> <!-- responsiver wrapper-->  
    	<!-- (5) Die Sonne. Dies ist ein SVG-->
    	<!-- (6) Hitzestrahlen. Diese sind auch SVGs-->
-   		<div>
+   </div> <!--Ende .svgbox-sun -->
+   	<div class="explanations">
    		<h2>Was tut die Sonne / Was passiert unter der Hitze
    		</h2>
-   			<p>Erläuterung
-   			</p>	
+   		<p>Erläuterung
+   		</p>	
 
    	</div>
 
    	<!-- (7) Wolke. Dies ist auch ein SVG -->
-   	<div>
+   <div class="explanations">
    		<h2>Was passiert mit der Wolke / Dem Regen der fällt
    		</h2>
-   			<p>Erläuterung
-   			</p>	
-
+   		<p>Erläuterung
+   		</p>	
    	</div>
 
-   	<!-- (8) Berglandschaft. Dies ist auch ein SVg-->
-<div>
+   	<!--(8) Berglandschaft. Dies ist auch ein SVg-->
+      <div class="explanations">
    		<h2>Der Tropfen ist wieder im Meer/ Es geht wieder von vorne los
    		</h2>
-   			<p>Erläuterung
-   			</p>	
-
+   		<p>Erläuterung
+   		</p>	
    	</div>
-
+   </div> <!-- Ende #content -->
 
    </body>
  </html>

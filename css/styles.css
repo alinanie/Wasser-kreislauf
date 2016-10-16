@@ -1,4 +1,92 @@
 
 body{
-	background-color: #b0e2ff;
+	background-color: #a4d3ee;
+	margin: 0px;
 }
+
+#content {
+
+	width:100%;
+}
+
+/* Styles für die Textelemente */
+
+.explanations {
+	height: 200px;
+	width: 300px;
+	background-color: #eeeeee;
+	padding: 10px;
+	margin:10px;
+	
+}
+
+
+/* responsive Umsetzung für den Container der SVG Elemente */
+
+.svgbox-ocean { 
+	width: 100%; 
+	height: 400px;
+	position: relative;
+	/*top: 200px;*/
+	left: 0px;
+	margin: 10px 0px;
+	display:inline-block;
+	
+	
+}
+
+.svgbox svg { 
+	width: 100%;
+	height:100%;
+
+	
+}
+
+/* Animation für die "meer" Elemente */
+
+@keyframes h-waves {
+
+	0% { left: 0px;}
+	50% {left: 50px;}
+	100% {left: 0px;}
+}
+
+@keyframes v-waves {
+
+	0% { top: 0px;}
+	50% {top: 10px;}
+	100% {top: 0px;}
+}
+
+/* Styles für die "meer" Elemente */
+
+#ocean-white{
+	stroke: #f0ffff;
+	fill: #f0ffff;
+	position: absolute;	
+	animation-name: h-waves;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+#ocean-blue{	
+	stroke: #607b8b;
+	fill: #607b8b;
+	opacity: 0.7;
+	position: absolute;
+		
+}
+
+#ocean-light{
+
+	stroke: #8db6cd;
+	fill: #8db6cd;
+	position: absolute;
+	animation-name: v-waves;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;	
+}
+
+
+
+
