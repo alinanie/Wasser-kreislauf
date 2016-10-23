@@ -1,12 +1,13 @@
 
 body{
 	background-color: #a4d3ee;
-	/*margin: 0px;*/
+	margin: 0px;
 	overflow-x: hidden;
     height: 4000px;
 }
 
 #content {
+
 	width:100%;
 	height: 4000px;
     overflow: hidden;
@@ -44,6 +45,11 @@ body{
 	height:100%;	
 }
 
+.move {
+  display: block;
+  position: absolute;
+
+}
 
 /* Animation für die "meer" Elemente */
 
@@ -122,67 +128,4 @@ body{
 
 
 
-.boy {
-  display: block;
-  position: absolute;
-}
 
-.joey {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/joey.png);
-  width: 300px;
-  height: 418px;
-}
-
-.donnie {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/donnie.png);
-  width: 250px;
-  height: 303px;
-}
-
-.jordan {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/jordan.png);
-  width: 200px;
-  height: 268px;
-}
-
-.danny {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/danny.png);
-  width: 260px;
-  height: 334px;
-}
-
-.jonathan {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/johnathon.png);
-  width: 200px;
-  height: 353px;
-}
-
-.brian {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/brian.png);
-  width: 260px;
-  height: 352px;
-}
-
-.kevin {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/kevin.png);
-  width: 280px;
-  height: 282px;
-}
-
-.howied {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/howied.png);
-  width: 250px;
-  height: 330px;
-}
-
-.nick {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/nick.png);
-  width: 260px;
-  height: 306px;
-}
-
-.aj {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/aj.png);
-  width: 199px;
-  height: 254px;
-}
