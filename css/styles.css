@@ -28,7 +28,7 @@ body{
 
 /* responsive Umsetzung für den Container der SVG Elemente */
 
-.svgbox-ocean { 
+#svgbox-ocean { 
 	width: 100%; 
 	height: 400px;
 	position: relative;
@@ -40,7 +40,7 @@ body{
 	
 }
 
-.svgbox-ocean svg { 
+#svgbox-ocean svg { 
 	width: 100%;
 	height:100%;	
 }
@@ -109,6 +109,9 @@ body{
 #sun {
     stroke: #ffc200;
 	fill: #ffc200;
+	height:100%;
+	position:absolute;
+	left:-200px;
 
 }
 
@@ -121,10 +124,10 @@ body{
 
 }
 
-.svgbox-sun svg { 
+/*.svgbox-sun svg { 
 	width: 100%;
 	height:100%;	
-}
+}*/
 
 
 
